@@ -14,8 +14,8 @@
  *   $ set -gx PATH $VBCC/bin $PATH
  *   $ vc +kick13 -O2 day02p02.c -o day02p02
  *   $ xdftool day02p02.adf format day02p02 + boot install + makedir s + write startup-sequence s + write day02p02 + protect day02p02 +er + write input
- *   $ amiberry -0 day02p02.adf -G
- *   $ fs-uae --floppy-drive-0=day02p02.adf
+ *   $ amiberry -r kick13.rom -0 day02p02.adf.gz -G
+ *   $ fs-uae --floppy-drive-0=day02p02.adf.gz
  *   $ cp day02p02.adf /mnt/ROMS/
  *
  * Enjoy,
