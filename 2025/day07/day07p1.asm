@@ -132,7 +132,7 @@ loop1:
 	bne	label0
 	addq	#1,d4			; result++
 	move.b	d0,-1(a1)		; *(next_line - 1) = 'S'
-	move.b	#0,(a1)			; *(next_line    ) = 0
+	move.b	d1,(a1)			; *(next_line    ) = '^'
 	move.b	d0,1(a1)		; *(next_line + 1) = 'S'
 	bra	label1
 label0:
